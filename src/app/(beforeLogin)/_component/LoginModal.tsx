@@ -1,29 +1,23 @@
 "use client";
+
+import style from "@/app/(beforeLogin)/_component/login.module.css";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
-import style from "./login.module.css";
 
+export default function LoginModal() {
+  const [id, setId] = useState();
+  const [password, setPassword] = useState();
+  const [message, setMessage] = useState();
 
-const LoginModal = () => {
-  const [id, setId] = useState("");
-  const [password, setPassword] = useState("");
-  const [message, setMessage] = useState("");
-  // const router = useRouter();
-
-  const onSubmit = (e) => {
-    console.log("submit");
-  };
-
-  const onChangeId = (e) => {
-    setId(e.target.value);
-  };
-
-  const onChangePassword = (e) => {
-    setPassword(e.target.value);
-  };
-
+  const router = useRouter();
+  const onSubmit = () => {};
   const onClickClose = () => {
-    router.push("/");
+    router.back();
   };
+
+  const onChangeId = () => {};
+
+  const onChangePassword = () => {};
 
   return (
     <div className={style.modalBackground}>
@@ -82,6 +76,4 @@ const LoginModal = () => {
       </div>
     </div>
   );
-};
-
-export default LoginModal;
+}

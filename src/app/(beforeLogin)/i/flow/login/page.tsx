@@ -1,3 +1,7 @@
-export default function Default () {
-  return null;
+import LoginModal from "@/app/(beforeLogin)/_component/LoginModal";
+
+export default function Page() {
+  return (
+    <LoginModal />
+  );
 }
