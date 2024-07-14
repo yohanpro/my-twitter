@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: stretch;
-  background-color: #fff;
+  background-color: inherit;
 }
 
 .leftSectionWrapper {
@@ -14,7 +14,6 @@
 .leftSection {
   width: 275px;
   height: 100dvh;
-  background-color: aquamarine;
 }
 
 .leftSectionFixed {
@@ -76,7 +75,6 @@
   height: 100dvh;
   flex-direction: column;
   flex-grow: 1;
-  background-color: royalblue;
 }
 
 .rightSectionInner {
