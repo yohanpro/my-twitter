@@ -1,4 +1,5 @@
 
+import Post from '../_component/Post';
 import PostForm from './_component/PostForm';
 import Tab from './_component/Tab';
 import TabProvider from './_component/TabProvider';
@@ -11,7 +12,12 @@ export default function Home() {
         <Tab />
         <PostForm/>
         <div>
-          이것은 children
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
         </div>
       </TabProvider>
     </main>

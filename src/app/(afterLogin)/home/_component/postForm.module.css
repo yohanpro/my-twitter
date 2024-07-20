@@ -35,12 +35,18 @@
   width: 100%;
 }
 .postForm textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
   width: 100%;
+  max-width: 100%;
   border: none;
   padding: 12px 0;
   font-size: 20px;
   line-height: 24px;
   outline: none;
+  resize: none; /* 크기 조정 비활성화 */
+  overflow: hidden; /* 텍스트 영역 밖으로 넘치는 텍스트 숨김 */
+  box-sizing: border-box; /* 패딩 포함한 크기 계산 */
 }
 .postForm textarea::placeholder {
   font-family: Malgun Gothic;
