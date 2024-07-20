@@ -1,6 +1,6 @@
 .navLi {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .navPill {
@@ -32,7 +32,7 @@
 
 @media (min-width: 1280px) {
   .navPill {
-    width: 275px;
+    width: 100%;
   }
   .navPill div {
     display: block;
