@@ -1,7 +1,7 @@
 .main {
   width: 600px;
   height: 100%;
-  border-color: rgb(239, 243, 244);
+  border-color: rgba(255, 255, 255, 0.3);
   border-right-width: 1px;
   border-left-width: 1px;
   border-left-style: solid;
