@@ -1,16 +1,20 @@
 "use client";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import {useRouter} from "next/navigation";
 import Main from "@/app/(beforeLogin)/_component/Main";
+import {useSession} from "next-auth/react";
 
 export default function Login() {
   const router = useRouter();
+  const { data: session } = useSession();
 
-  useEffect(() => {
-    // 컴포넌트가 마운트된 후에 라우팅을 처리합니다.
-    router.replace('/i/flow/login');
-  }, [router]);
+  if (session?.user) {
+    router.replace('/home');
+    return null;
+  }
 
-  return <Main />;
+  router.replace('/i/flow/login');
+  return (
+    <Main/>
+  );
 }

@@ -1,7 +1,6 @@
-import SearchForm from "../_component/SearchForm";
 import style from "./explore.module.css";
-
-import Trend from "@/app/(afterLogin)/_component/Trend";
+import SearchForm from "@/app/(afterLogin)/_component/SearchForm";
+import TrendSection from "./_component/TrendSection";
 
 export default function Home() {
   return (
@@ -11,17 +10,8 @@ export default function Home() {
       </div>
       <div className={style.trend}>
         <h3>나를 위한 트렌드</h3>
-        <Trend />
-        <Trend />
-        <Trend />
-        <Trend />
-        <Trend />
-        <Trend />
-        <Trend />
-        <Trend />
-        <Trend />
-        <Trend />
+        <TrendSection />
       </div>
     </main>
-  );
+  )
 }

@@ -1,46 +1,23 @@
-.navLi {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .navPill {
-  display: inline-flex;
-  height: 50px;
-  padding: 12px;
-  align-items: center;
+    display: inline-flex;
+    height: 50px;
+    padding: 12px;
+    align-items: center;
 }
-
-@media (prefers-color-scheme: light) {
-  .navPill:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* 어두운 배경색 */
+.navPill:hover {
+    background-color: rgba(15,20,25, 0.1);
     border-radius: 29px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .navPill:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* 밝은 배경색 */
-    border-radius: 29px;
-  }
 }
 
 .navPill > div {
-  margin-left: 20px;
-  margin-right: 16px;
-  font-size: 20px;
-}
-
-@media (min-width: 1280px) {
-  .navPill {
-    width: 100%;
-  }
-  .navPill div {
-    display: block;
-  }
-}
-
-@media (max-width: 1279px) {
-  .navPill div {
     display: none;
-  }
+}
+
+@media all and (min-width: 1300px) {
+    .navPill > div {
+        margin-left: 20px;
+        margin-right: 16px;
+        font-size: 20px;
+        display: inline-block;
+    }
 }
